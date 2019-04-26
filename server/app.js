@@ -54,9 +54,9 @@ app.use((req, res, next) => {
 });
 
 // index route
-app.get("/", (req, res) => {
+app.get("/api/home", (req, res) => {
   const title = "Propel";
-  res.json({ name: title });
+  res.send({ name: title });
 });
 
 // about route
